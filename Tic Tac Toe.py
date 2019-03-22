@@ -1,12 +1,17 @@
 # milestone project 1
 def check(p):
-    if(tic[1] == p and tic[2] == p and tic[3] == p) or (tic[4] == p and tic[5] == p and tic[6] == p) or (tic[1] == p and tic[2] == p and tic[3] == p) or (tic[1] == p and tic[5] == p and tic[9] == p) or (tic[3] == p and tic[5] == p and tic[7] == p) or (tic[1] == p and tic[4] == p and tic[7] == p) or (tic[2] == p and tic[5] == p and tic[8] == p) or (tic[3] == p and tic[6] == p and tic[9] == p):
+    if(tic[1] == p and tic[2] == p and tic[3] == p) or (tic[4] == p and tic[5] == p and tic[6] == p) or (tic[7] == p and tic[8] == p and tic[9] == p) or (tic[1] == p and tic[5] == p and tic[9] == p) or (tic[3] == p and tic[5] == p and tic[7] == p) or (tic[1] == p and tic[4] == p and tic[7] == p) or (tic[2] == p and tic[5] == p and tic[8] == p) or (tic[3] == p and tic[6] == p and tic[9] == p):
         if p == p1:
             print('Player 1 Wins')
             exit()
         else:
             print('Player 2 Wins')
             exit()
+    else:
+        for i in range(1,10):
+            if tic[i] != ' ':
+                pass
+        print('The game is tied')
 
 
 def display():
