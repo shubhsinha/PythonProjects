@@ -8,10 +8,13 @@ def check(p):
             print('Player 2 Wins')
             exit()
     else:
-        for i in range(1,10):
-            if tic[i] != ' ':
-                pass
-        print('The game is tied')
+        new = 0
+        for i in range(0, 10):
+            if tic[i] == ' ':
+                new = 1
+                break
+        if new == 0:
+            print('The game is tied')
 
 
 def display():
